@@ -15,7 +15,7 @@
     $.fn.fileinputLocales['vi'] = {
         fileSingle: 'tập tin',
         filePlural: 'các tập tin',
-        browseLabel: 'Duyệt &hellip;',
+        browseLabel: 'Tải lên',
         removeLabel: 'Gỡ bỏ',
         removeTitle: 'Bỏ tập tin đã chọn',
         cancelLabel: 'Hủy',
@@ -25,7 +25,7 @@
         msgNo: 'Không',
         msgNoFilesSelected: 'Không tập tin nào được chọn',
         msgCancelled: 'Đã hủy',
-        msgPlaceholder: 'Select {files}...',
+        msgPlaceholder: 'Chọn {files}',
         msgZoomModalHeading: 'Chi tiết xem trước',
         msgFileRequired: 'You must select a file to upload.',
         msgSizeTooSmall: 'File "{name}" (<b>{size} KB</b>) is too small and must be larger than <b>{minSize} KB</b>.',

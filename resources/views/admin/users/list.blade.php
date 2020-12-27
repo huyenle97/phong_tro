@@ -31,8 +31,8 @@
 						</div>
                         @if(session('thongbao'))
                         <div class="alert bg-success">
-							<button type="button" class="close" data-dismiss="alert"><span>×</span><span class="sr-only">Close</span></button>
-							<span class="text-semibold">Well done!</span>  {{session('thongbao')}}
+							<button type="button" class="close" data-dismiss="alert"><span>×</span><span class="sr-only">Đóng</span></button>
+							 {{session('thongbao')}}
 						</div>
                         @endif
 						<table class="table datatable-show-all">
@@ -94,7 +94,7 @@
 		</div>
 		<!-- Footer -->
 		<div class="footer text-muted">
-			&copy; 2019. <a href="#">Project Phòng trọ Đà nẵng</a> by <a href="" target="_blank">Thành Trung</a>
+			&copy; 2021. <a href="#">Phòng trọ TP Vinh</a> by <a href="" target="_blank">Công Hoàng</a>
 		</div>
 		<!-- /footer -->
 	</div>

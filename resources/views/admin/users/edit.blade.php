@@ -173,7 +173,7 @@
 		</div>
 		<!-- Footer -->
 		<div class="footer text-muted">
-			&copy; 2019. <a href="#">Project Phòng trọ Đà nẵng</a> by <a href="" target="_blank">Thành Trung</a>
+			&copy; 2019. <a href="#">Phòng trọ Tp Vinh</a> by <a href="" target="_blank">Công Hoàng</a>
 		</div>
 		<!-- /footer -->
 	</div>

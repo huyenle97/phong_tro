@@ -22,20 +22,20 @@ class AdminController extends Controller
         'total_report'=>$reports->count(),
       ]);
     }
-    public function getThongke(){
-      $total_users_active = User::where('tinhtrang',1)->get()->count();
-      $total_users_deactive = User::where('tinhtrang',0)->get()->count();
-      $total_rooms_approve = Motelroom::where('approve',1)->get()->count();
-      $total_rooms_unapprove = Motelroom::where('approve',0)->get()->count();
-      $reports = Reports::all();
-      return view ('admin.thongke',[
-        'total_users_active'=>$total_users_active,
-        'total_users_deactive'=>$total_users_deactive,
-        'total_rooms_approve'=>$total_rooms_approve,
-        'total_rooms_unapprove'=>$total_rooms_unapprove,
-        'total_report'=>$reports->count(),
-      ]);
-    }
+    // public function getThongke(){
+    //   $total_users_active = User::where('tinhtrang',1)->get()->count();
+    //   $total_users_deactive = User::where('tinhtrang',0)->get()->count();
+    //   $total_rooms_approve = Motelroom::where('approve',1)->get()->count();
+    //   $total_rooms_unapprove = Motelroom::where('approve',0)->get()->count();
+    //   $reports = Reports::all();
+    //   return view ('admin.thongke',[
+    //     'total_users_active'=>$total_users_active,
+    //     'total_users_deactive'=>$total_users_deactive,
+    //     'total_rooms_approve'=>$total_rooms_approve,
+    //     'total_rooms_unapprove'=>$total_rooms_unapprove,
+    //     'total_report'=>$reports->count(),
+    //   ]);
+    // }
 
     public function getReport(){
       $reports = Reports::all()->count();
@@ -117,8 +117,8 @@ class AdminController extends Controller
           'password' => 'min:3|max:32',
           'repassword' => 'same:password',
         ],[
-          'password.min' => 'password phải lớn hơn 3 và nhỏ hơn 32 kí tự',
-          'password.max' => 'password phải lớn hơn 3 và nhỏ hơn 32 kí tự',
+          'password.min' => 'Mật khẩu phải lớn hơn 3 và nhỏ hơn 32 kí tự',
+          'password.max' => 'Mật khẩu phải lớn hơn 3 và nhỏ hơn 32 kí tự',
           'repassword.same' => 'Nhập lại mật khẩu không đúng',
           'repassword.required' => 'Vui lòng nhập lại mật khẩu',
         ]);

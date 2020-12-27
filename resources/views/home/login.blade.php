@@ -7,7 +7,7 @@
 			<div class="gap"></div>
 			<div class="panel panel-primary">
 				<div class="panel-heading">Đăng nhập</div>
-				<div class="panel-body">
+				<div class="panel-body login">
 					<div class="gap"></div>
 					@if ($errors->any())
 					    <div class="alert alert-danger">

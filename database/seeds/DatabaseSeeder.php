@@ -12,12 +12,12 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         DB::table('districts')->insert([
-        	['name'=>'Hải Châu','slug'=>'hai-chau'],
-        	['name'=>'Thanh Khê','slug'=>'thanh-khe'],
-        	['name'=>'Sơn Trà','slug'=>'son-tra'],
-        	['name'=>'Ngũ Hành Sơn','slug'=>'ngu-hanh-son'],
-        	['name'=>'Liên Chiểu','slug'=>'lien-chieu'],
-        	['name'=>'Cẩm Lệ','slug'=>'cam-le']
+        	['name'=>'Bến Thủy','slug'=>'ben-thuy'],
+        	['name'=>'Trung Đô','slug'=>'trungh-do'],
+        	['name'=>'Trường Thi','slug'=>'truong-thi'],
+        	['name'=>'Quang Trung','slug'=>'quang-trung'],
+        	['name'=>'Phượng Hoàng','slug'=>'phuong-hoang'],
+        	['name'=>'Đội Cung','slug'=>'doi-cung']
         ]);
         $this->call(CategoriesSeeder::class);
     }
@@ -31,8 +31,8 @@ class CategoriesSeeder extends Seeder
         DB::table('categories')->insert([
             ['name'=>'Phòng trọ cho thuê','slug'=>'phong-tro-cho-thue'],
             ['name'=>'Ở ghép','slug'=>'o-ghep'],
-            ['name'=>'Nhà nguyên căn','slug'=>'nha-nguyen-can'],
-            ['name'=>'Chung cư','slug'=>'chung-cu']
+            ['name'=>'Nhà cấp 4','slug'=>'nha-nguyen-can'],
+            ['name'=>'Chung cư mini','slug'=>'chung-cu']
         ]);
     }
 }

@@ -1,7 +1,7 @@
 <!-- Main navbar -->
 	<div class="navbar navbar-default header-highlight">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="/admin"><img src="images/logo.png" alt=""></a>
+			<a class="navbar-brand" href="/admin" style="color:white; font-size:17px"><strong>TÌM TRỌ THÀNH PHỐ VINH</strong></a>
 
 			<ul class="nav navbar-nav visible-xs-block">
 				<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
@@ -26,7 +26,7 @@
 					</a>
 
 					<ul class="dropdown-menu dropdown-menu-right">
-						<li><a href="admin/logout"><i class="icon-switch2"></i> Logout</a></li>
+						<li><a href="admin/logout"><i class="icon-switch2"></i> Đăng xuất</a></li>
 					</ul>
 				</li>
 			</ul>

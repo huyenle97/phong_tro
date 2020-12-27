@@ -13,13 +13,17 @@ body {
 .navbar-inverse .navbar-nav>li>a.btn-dangtin:hover{
     background: #fff;
     padding: 5px!important  ;
-    color: #003352!important;
+    color: #428bcad6!important;
     font-weight: bold;
     margin-top: 10px;
     border-radius: 5px;
 }
 .gap{
     margin-top: 10px;
+}
+.item-banner{
+    height: 500px;
+    width: auto;
 }
 .user_avatar {
     width: 150px;
@@ -61,23 +65,34 @@ pre {
     border: none!important;
     border-radius: 0px!important;
 }
+.panel {
+    margin-top: 110px;
+    margin-bottom: 120px;
+}
+.login-form{
+    width: 25%;
+}
+.login{
+    margin-top: 40px;
+    margin-bottom: 47px;
+}
 .panel-primary>.panel-heading {
     color: #fff;
-    background-color: #003352;
-    border-color: #003352;
+    background-color: #428bca;
+    border-color: #428bca;
 }
 .btn-primary {
     color: #fff;
-    background-color: #003352;
-    border-color: #003352;
+    background-color: #428bca;
+    border-color: #428bca;
 }
 .navbar {
 	border-radius: 0px;
    margin-bottom: 0px;
 }
 .navbar-inverse {
-    background-color: #003352;
-    border-color: #003352;
+    background-color: #428bcaeb;
+    border-color: #68d046;
 }
 .navbar-inverse .navbar-nav>li>a {
     color: #fff;
@@ -101,7 +116,7 @@ pre {
 	position: absolute;
 	bottom: 20px;
     right: 12px;
-    background: #003352;
+    background: #428bca;
     width: 600px;
     padding: 15px;
     border: 1px solid #f0f0f0;
@@ -135,7 +150,7 @@ h3.title-comm:before {
 .title-comm .title-holder {
     min-width: 350px;
     height: 45px;
-    background-color: #003352;
+    background-color: #ef9713;
     height: auto;
     line-height: 45px;
     padding: 0px 20px;
@@ -193,7 +208,7 @@ h3.title-comm:before {
 .category{
 	position: absolute;
     width: 100%;
-    background: #003352;;
+    background: #2895f3f2;;
     bottom: 0;
     left: 0;
     padding: 5px;
@@ -255,12 +270,16 @@ footer {
 	font-size: 14px;
     padding-top: 10px;
     background-position: center bottom;
-    background: #003352 url(images/footer-bg.png) no-repeat center bottom;
+    background: url(images/back.jpg) center bottom;
     color: #fff;
-    height: 300px
+    height: 300px;
+    background-size: cover;
+    /* position: fixed; */
+
 }
 .logo-footer{
-	text-align: center;
+    text-align: center;
+    margin-top: 130px;
 }
 footer .social-footer ul li {
     display: inline-block;
@@ -271,7 +290,7 @@ footer .social-footer ul li a {
     color: #6cd1f9;
     font-size: 16px;
     display: inline-block;
-    width: 30px;
+    /* width: 30px; */
     height: 30px;
     line-height: 30px;
     border: 1px solid #e3e9ec;
@@ -510,13 +529,13 @@ footer h4 {
 .asks-first {
     padding: 10px 0 10px 30px;
     position: relative;
-    background: #56AEE3;
+    background: #e3cb56;
     color: #fff;
 }
 .asks-first2 {
     padding: 10px 0 10px 30px;
     position: relative;
-    background: #64BA71;
+    background:#223a80;
     color: #fff;
 }
 .asks-first-circle {

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Project Phòng Trọ</title>
+	<title>Phòng Trọ Thành Vinh</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="csrf-token" content="{{ csrf_token() }}">
@@ -37,7 +37,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>                        
 				</button>
-				<a class="navbar-brand" href=""><img src="images/logo.png"></a>
+				<a class="navbar-brand" href="" style="height: auto;"><img src="images/dd.png"></a>
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">
@@ -78,11 +78,11 @@
 				<div class="col-md-12">
 					<div class="logo-footer">
 						<a href="/" title="Cổng thông tin số 1 về Dự án Bất động sản - Homedy.com">
-							<img src="images/logo.png">                        
+							<img src="images/dd.png">                        
 						</a>
 						<div style="padding-top: 10px;">
-							<p>Dự án phát triển Website Đăng tin và Tìm kiếm Phòng trọ Đà Nẵng.</p>
-							<p>Sinh viên thực hiện: Lê Thành Trung - Lớp 15SI-CLC.</p>
+							<p>Đồng hành cùng sinh viên Đại học Vinh tìm kiếm phòng trọ</p>
+							<p>Sinh viên thực hiện: Lê Công Hoàng - K58 - CNTT</p>
 						</div>
 					</div>
 				</div>

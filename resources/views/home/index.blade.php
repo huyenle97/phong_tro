@@ -46,8 +46,41 @@ function time_elapsed_string($datetime, $full = false) {
 ?>
 <div class="container-fluid" style="padding-left: 0px;padding-right: 0px;">
 	<div class="search-map hidden-xs" >
-		<div id="map"></div>
-		<div class="box-search">
+		<!-- <div id="map"></div> -->
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+			<div class="item item-banner active">
+				<img src="./images/phongtro1.jpg" alt="Los Angeles" style="width:100%;">
+			</div>
+
+			<div class="item item-banner">
+				<img src="./images/phongtro2.jpg" alt="Chicago" style="width:100%;">
+			</div>
+			
+			<div class="item item-banner">
+				<img src="./images/phongtro4.jpg" alt="New york" style="width:100%;">
+			</div>
+			</div>
+
+			<!-- Left and right controls -->
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+			<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+			<span class="sr-only">Next</span>
+			</a>
+		</div>
+		<div class="box-search mt-5">
 				<!-- <div id="flat"></div>
 					<div id="lng"></div> -->
 					<form onsubmit="return false">
@@ -91,31 +124,6 @@ function time_elapsed_string($datetime, $full = false) {
 
 				</div>
 				<div class="container">
-					<div class="row" style="margin-top: 10px; margin-bottom: 10px">
-						<div class="col-md-6">
-							<div class="asks-first">
-					            <div class="asks-first-circle">
-					              <span class="fa fa-search"></span>
-					            </div>
-					            <div class="asks-first-info">
-					              <h2>Giải pháp tìm kiếm mới</h2>
-					              <p>Tiết kiệm nhiều thời gian cho bạn với giải pháp và công nghệ mới</p>
-					            </div>
-				          	</div>
-						</div>
-						<div class="col-md-6">
-							<div class="asks-first2">
-					            <div class="asks-first-circle">
-					              <span class="fas fa-hourglass-start"></span>
-
-					            </div>
-					            <div class="asks-first-info">
-					              <h2>An Toàn - Nhanh chóng</h2>
-					              <p>Với đội ngũ Quản trị viên kiểm duyệt hiệu quả, Chất Lượng đem lại sự tin tưởng.</p>
-					            </div>
-				          	</div>
-						</div>
-					</div>
 					<h3 class="title-comm"><span class="title-holder">PHÒNG TRỌ XEM NHIỀU NHẤT</span></h3>
 					<div class="row room-hot">
 						@foreach($hot_motelroom as $room)
@@ -155,12 +163,36 @@ function time_elapsed_string($datetime, $full = false) {
 								</div>
 							</div>
 							@endforeach
-							
-								
+						</div>
+								<div class="row" style="margin-top: 10px; margin-bottom: 10px">
+									<div class="col-md-6">
+										<div class="asks-first">
+											<div class="asks-first-circle">
+											<span class="fa fa-search"></span>
+											</div>
+											<div class="asks-first-info">
+											<h2>Cách tìm kiếm mới</h2>
+											<p>Tiết kiệm nhiều thời gian cho bạn với giải pháp và công nghệ mới</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="asks-first2">
+											<div class="asks-first-circle">
+											<span class="fas fa-hourglass-start"></span>
+
+											</div>
+											<div class="asks-first-info">
+											<h2>An Toàn - Nhanh chóng</h2>
+											<p>Với đội ngũ Quản trị viên kiểm duyệt hiệu quả, Chất Lượng đem lại sự tin tưởng.</p>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
+							
 							<div class="container">
-								<h3 class="title-comm"><span class="title-holder">PHÒNG TRỌ ĐÀ NẴNG</span></h3>
+								<h3 class="title-comm"><span class="title-holder">PHÒNG TRỌ ĐẠI HỌC VINH</span></h3>
 								<div class="row">
 									<div class="col-md-8">
 										@foreach($listmotelroom as $room)

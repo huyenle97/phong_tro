@@ -76,14 +76,34 @@
 													@elseif($room->tinhtrang == 0)
 														<li><a href="admin/motelrooms/approve/{{$room->id}}"><i class="icon-file-pdf"></i> Kiểm duyệt</a></li>
 													@endif
-													
-													<li><a href="admin/motelrooms/del/{{$room->id}}"><i class="icon-file-excel"></i> Xóa</a></li>
+													<li><a data-toggle='modal' data-target='#confirm{{$room->id}}'><i class="icon-file-excel"></i> Xóa</a></li>
 												</ul>
 											</li>
 										</ul>
 									</td>
 								</tr>
+								<div class='modal fade' id='confirm{{$room->id}}'>
+									<div class='modal-dialog'>
+										<div class='modal-content'>
+											<div class='modal-header'>
+												<h5 class='modal-title'><strong>XÁC NHẬN XÓA</strong></h5>
+												<button type='button' class='close' data-dismiss='modal' aria-label='Close'>
+												<span aria-hidden='true'>&times;</span>
+												</button>
+											</div>
+											<div class='modal-body'>
+												<p>Tất cả những thông tin liên quan tới bài đăng này sẽ bị xóa</p>
+												<p>Bạn chắc chắn muốn xóa bài đăng này?</p>
+											</div>
+											<div class='modal-footer'>
+												<button type='button' class='btn btn-secondary' data-dismiss='modal'>Hủy</button>
+												<a href='admin/motelrooms/del/{{$room->id}}'><button type='button' class='btn btn-primary'> Xóa </button></a>
+											</div>
+										</div>
+									</div>
+								</div>
 								@endforeach
+								
 							</tbody>
 						</table>
 					</div>
@@ -91,7 +111,7 @@
 		</div>
 		<!-- Footer -->
 		<div class="footer text-muted">
-			&copy; 2019. <a href="#">Project Phòng trọ Đà nẵng</a> by <a href="" target="_blank">Thành Trung</a>
+			&copy; 2019. <a href="#">Phòng trọ TP Vinh</a> by <a href="" target="_blank">Công Hoàng</a>
 		</div>
 		<!-- /footer -->
 	</div>

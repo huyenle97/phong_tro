@@ -56,8 +56,8 @@
 						<input type="hidden" name="_token" value="{{ csrf_token() }}">
 						<div class="panel panel-body login-form">
 							<div class="text-center">
-								<div class="icon-object border-warning-400 text-warning-400"><i class="icon-people"></i></div>
-								<h5 class="content-group-lg">Please Login to Admin Panel</h5>
+								<div class="icon-object border-warning-400 text-warning-400"><i class="icon-users"></i></div>
+								<h5 class="content-group-lg">Đăng nhập vào tài khoản Admin</h5>
 							</div>
 							@if ($errors->any())
 							    <div class="alert alert-danger">
@@ -70,19 +70,19 @@
 							@endif
 							@if(session('thongbao'))
 		                        <div class="alert bg-danger">
-									<button type="button" class="close" data-dismiss="alert"><span>×</span><span class="sr-only">Close</span></button>
-									<span class="text-semibold">Error!</span>  {{session('thongbao')}}
+									<button type="button" class="close" data-dismiss="alert"><span>×</span><span class="sr-only">Đóng</span></button>
+									<span class="text-semibold">Lỗi!</span>  {{session('thongbao')}}
 								</div>
 		            		@endif
 							<div class="form-group has-feedback has-feedback-left">
-								<input type="text" name="username" class="form-control" placeholder="Username">
+								<input type="text" name="username" class="form-control" placeholder="Tên đăng nhập">
 								<div class="form-control-feedback">
 									<i class="icon-user text-muted"></i>
 								</div>
 							</div>
 
 							<div class="form-group has-feedback has-feedback-left">
-								<input type="password" name="password" class="form-control" placeholder="Password">
+								<input type="password" name="password" class="form-control" placeholder="Mật khẩu">
 								<div class="form-control-feedback">
 									<i class="icon-lock2 text-muted"></i>
 								</div>
@@ -93,14 +93,14 @@
 									<div class="col-sm-6">
 										<label class="checkbox-inline">
 											<input type="checkbox" class="styled" checked="checked">
-											Remember
+											Ghi nhớ mật khẩu
 										</label>
 									</div>
 								</div>
 							</div>
 
 							<div class="form-group">
-								<button type="submit" class="btn bg-blue btn-block">Login <i class="icon-circle-right2 position-right"></i></button>
+								<button type="submit" class="btn bg-blue btn-block">Đăng nhập<i class="icon-circle-right2 position-right"></i></button>
 							</div>
 
 							

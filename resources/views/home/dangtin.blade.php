@@ -22,13 +22,13 @@
 					@if(session('warn'))
           <div class="alert bg-danger">
             <button type="button" class="close" data-dismiss="alert"><span>×</span><span class="sr-only">Close</span></button>
-            <span class="text-semibold">Error!</span>  {{session('warn')}}
+            <span class="text-semibold">Lỗi!</span>  {{session('warn')}}
           </div>
           @endif
           @if(session('success'))
 					<div class="alert bg-success">
 						<button type="button" class="close" data-dismiss="alert"><span>×</span><span class="sr-only">Close</span></button>
-						<span class="text-semibold">Done!</span>  {{session('success')}}
+						{{session('success')}}
 					</div>
 					@endif
           @if(Auth::user()->tinhtrang != 0)
@@ -39,14 +39,9 @@
 							<input type="text" class="form-control" name="txttitle">
 						</div>
 						<div class="form-group">
-							<label>Địa chỉ phòng trọ:</label> Bạn có thể nhập hoặc chọn ví trí trên bản đồ 
+							<label>Địa chỉ phòng trọ:</label>
 							<input type="text" id="location-text-box" name="txtaddress" class="form-control" value="" />
-              <p><i class="far fa-bell"></i> Nếu địa chỉ hiển thị bên bản đồ không đúng bạn có thể điều chỉnh bằng cách kéo điểm màu xanh trên bản đồ tới vị trí chính xác.</p>
-              <input type="hidden" id="txtaddress" name="txtaddress" value=""  class="form-control"  />
-              <input type="hidden" id="txtlat" value="" name="txtlat"  class="form-control"  />
-              <input type="hidden" id="txtlng"  value="" name="txtlng" class="form-control" />
             </div>
-            <div id="map-canvas" style="width: auto; height: 400px;"></div>
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
@@ -64,7 +59,7 @@
             <div class="row">
               <div class="col-md-4">
                 <div class="form-group">
-                  <label for="usr">Quận/ Huyện:</label>
+                  <label for="usr">Phường:</label>
                   <select class="selectpicker pull-right" data-live-search="true" name="iddistrict">
                     @foreach($district as $quan)
                     <option data-tokens="{{$quan->slug}}" value="{{ $quan->id }}">{{ $quan->name }}</option>
@@ -110,7 +105,7 @@
             <div class="form-group">
               <label for="comment">Thêm hình ảnh:</label>
               <div class="file-loading">
-                <input id="file-5" type="file" class="file" name="hinhanh[]" multiple data-preview-file-type="any" data-upload-url="#">
+                <input id="file-5" type="file" class="file" name="hinhanh[]">
               </div>
             </div>
             
